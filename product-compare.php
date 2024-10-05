@@ -6,9 +6,9 @@
  * Version: 1.0.0
  * Author: Shop ManagerX
  * Author URI: https://osmanhaideradnan.wordpress.com/
- * License: GPL2
- * requires at least: 3.5
- * Tested up to: 4.0
+ * License: GPLv3
+ * Requires at least: 5.2
+ * Requires PHP:      7.4
  * Text Domain: product-compare
  * Domain Path: /languages/
  * Requires Plugins: woocommerce
