@@ -90,9 +90,9 @@ final class Product_Compare {
     public function init_plugin() {
         if( is_admin() ) {
             new ProductCompare\Backend\Menu();
-        } else {
-            new ProductCompare\Frontend\Frontend();
         }
+
+        new ProductCompare\Frontend\Enqueue();
     }
 }
 
