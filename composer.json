@@ -1,0 +1,22 @@
+{
+    "name": "adnan/product-compare",
+    "authors": [
+        {
+            "name": "Osman Haider",
+            "email": "osmanhaider159@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "ProductCompare\\Backend\\": "backend/",
+            "ProductCompare\\Frontend\\": "frontend/"
+        },
+        "files": ["functions/functions.php"]
+    },
+    "description": "Product Compare Plugin",
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0+",
+    "require": {
+        "php": ">=7.4"
+    }
+}
