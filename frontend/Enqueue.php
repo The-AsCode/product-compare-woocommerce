@@ -17,7 +17,7 @@ class Enqueue {
             'product-compare-frontend',
             PRODUCT_COMPARE_ASSETS . '/js/frontend/compare-product-script.js', 
             ['jquery'], 
-            null, 
+            1.0, 
             true
         );
 
