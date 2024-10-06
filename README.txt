@@ -1,4 +1,4 @@
-=== Product Compare - Woocommerce Product Compare ===
+=== Product Compare Woocommerce ===
 Contributors: shopmanagerx
 Donate link: https://osmanhaideradnan.wordpress.com/
 Tags: compare, product compare 
@@ -7,7 +7,7 @@ Tested up to: 6.6.2
 WC requires at least: 3.1
 WC tested up to: 9.2.3
 Stable tag: 1.0.0
-License: GPLv2 or later
+License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 Product compare for woocommerce.
@@ -20,7 +20,7 @@ Now, customer will see a compare button with all product, and will see the compa
 
 ## Features: ##
 
-**Shortcode** Paste [wpc_comparison/] shortcode to a page and see the product compare table.
+**Shortcode** Paste [pcwc_comparison/] shortcode to a page and see the product compare table.
 
 == Installation ==
 
@@ -47,6 +47,6 @@ Yes, it will work with any standard WordPress theme.
 == Changelog ==
 
 = 1.0.0-beta =
-* Initial beta release.
+* Initial beta.
 
 == Upgrade Notice ==

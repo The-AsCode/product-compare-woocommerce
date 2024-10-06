@@ -11,7 +11,7 @@ class Menu {
      * Menu constructor.
      */
     public function __construct() {
-        add_action('admin_menu', [$this, 'add_menu']);
+        // add_action('admin_menu', [$this, 'add_menu']);
     }
 
     /**

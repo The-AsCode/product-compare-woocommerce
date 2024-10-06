@@ -9,8 +9,8 @@
  * License: GPLv3
  * Requires at least: 5.2
  * Requires PHP:      7.4
- * Text Domain: product-compare
- * Domain Path: /languages/
+ * Text Domain: pcwc
+ * Domain Path: languages/
  * Requires Plugins: woocommerce
  **/
 
@@ -28,7 +28,7 @@ require_once __DIR__ . '/vendor/autoload.php';
  * Plugin main class
  */
 final class Product_Compare {
-    const product_compare_version = '1.0.0';
+    const pcwc_version = '1.0.0';
 
     // Private constructor to enforce singleton pattern.
     private function __construct() {
@@ -57,7 +57,7 @@ final class Product_Compare {
 
     // Define the plugin constants.
     private function define_constants() {
-        define('PRODUCT_COMPARE_VERSION', self::product_compare_version);
+        define('PRODUCT_COMPARE_VERSION', self::pcwc_version);
         define('PRODUCT_COMPARE_FILE', __FILE__);
         define('PRODUCT_COMPARE_PATH', __DIR__);
         define('PRODUCT_COMPARE_URL', plugins_url('', PRODUCT_COMPARE_FILE));
