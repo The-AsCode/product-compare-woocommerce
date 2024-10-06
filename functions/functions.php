@@ -25,27 +25,27 @@ if( !function_exists( 'pcwc_add_compare_button')) {
 if( ! function_exists( 'pcwc_display_comparison' ) ){
     add_shortcode('pcwc_comparison', 'pcwc_display_comparison');
     function pcwc_display_comparison() {
-        // Retrieve compared products from session
-        $compare_products = isset($_SESSION['compare_products']) ? $_SESSION['compare_products'] : array();
+        // Retrieve compared products from session and sanitize them
+        $compare_products = isset($_SESSION['compare_products']) ? array_map('intval', $_SESSION['compare_products']) : array();
 
         if (empty($compare_products)) {
-            return 'No products in comparison list.';
+            return esc_html__('No products in comparison list.', 'text-domain');
         }
 
         ob_start();
 
         echo '<table class="shop_table compare-table">';
-        echo '<tr><th>Product</th><th>Price</th><th>Stock</th></tr>';
+        echo '<tr><th>' . esc_html__('Product', 'text-domain') . '</th><th>' . esc_html__('Price', 'text-domain') . '</th><th>' . esc_html__('Stock', 'text-domain') . '</th></tr>';
 
         foreach ( $compare_products as $product_id ) {
-            $product = wc_get_product( intval( $product_id ) );
+            $product = wc_get_product( $product_id );
             if ( ! $product ) {
                 continue; // Skip invalid product
             }
             echo '<tr>';
             echo '<td>' . esc_html( $product->get_name() ) . '</td>';
             echo '<td>' . wp_kses_post( wc_price( $product->get_price() ) ) . '</td>';
-            echo '<td>' . ( $product->is_in_stock() ? 'In Stock' : 'Out of Stock' ) . '</td>';
+            echo '<td>' . esc_html( $product->is_in_stock() ? __('In Stock', 'product-comparison-for-woocommerce') : __('Out of Stock', 'product-comparison-for-woocommerce') ) . '</td>';
             echo '</tr>';
         }
 
@@ -54,4 +54,3 @@ if( ! function_exists( 'pcwc_display_comparison' ) ){
         return ob_get_clean();
     }
 }
-
