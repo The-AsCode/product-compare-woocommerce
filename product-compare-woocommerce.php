@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Product Compare
- * Plugin URI: https://osmanhaideradnan.wordpress.com/
+ * Plugin URI: https://github.com/The-AsCode/product-compare-woocommerce
  * Description: A simple product comparison plugin for WooCommerce.
  * Version: 1.0.0
  * Author: Shop ManagerX
