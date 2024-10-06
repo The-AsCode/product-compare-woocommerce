@@ -1,4 +1,4 @@
-=== Product Compare Woocommerce ===
+=== Product Comparison for WooCommerce ===
 Contributors: shopmanagerx
 Donate link: https://osmanhaideradnan.wordpress.com/
 Tags: compare, product compare 

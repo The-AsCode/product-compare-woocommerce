@@ -44,7 +44,7 @@ if( ! function_exists( 'pcwc_display_comparison' ) ){
             }
             echo '<tr>';
             echo '<td>' . esc_html( $product->get_name() ) . '</td>';
-            echo '<td>' . wc_price( $product->get_price() ) . '</td>';
+            echo '<td>' . wp_kses_post( wc_price( $product->get_price() ) ) . '</td>';
             echo '<td>' . ( $product->is_in_stock() ? 'In Stock' : 'Out of Stock' ) . '</td>';
             echo '</tr>';
         }

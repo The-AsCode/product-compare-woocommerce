@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: Product Compare
+ * Plugin Name: Product Comparison
  * Plugin URI: https://github.com/The-AsCode/product-compare-woocommerce
  * Description: A simple product comparison plugin for WooCommerce.
  * Version: 1.0.0
@@ -9,7 +9,7 @@
  * License: GPLv3
  * Requires at least: 5.2
  * Requires PHP:      7.4
- * Text Domain: pcwc
+ * Text Domain: product-comparison-for-woocommerce
  * Domain Path: languages/
  * Requires Plugins: woocommerce
  **/
