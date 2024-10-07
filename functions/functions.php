@@ -29,13 +29,13 @@ if( ! function_exists( 'pcwc_display_comparison' ) ){
         $compare_products = isset($_SESSION['compare_products']) ? array_map('intval', $_SESSION['compare_products']) : array();
 
         if (empty($compare_products)) {
-            return esc_html__('No products in comparison list.', 'text-domain');
+            return esc_html__('No products in comparison list.', 'product-comparison-for-woocommerce');
         }
 
         ob_start();
 
         echo '<table class="shop_table compare-table">';
-        echo '<tr><th>' . esc_html__('Product', 'text-domain') . '</th><th>' . esc_html__('Price', 'text-domain') . '</th><th>' . esc_html__('Stock', 'text-domain') . '</th></tr>';
+        echo '<tr><th>' . esc_html__('Product', 'product-comparison-for-woocommerce') . '</th><th>' . esc_html__('Price', 'product-comparison-for-woocommerce') . '</th><th>' . esc_html__('Stock', 'product-comparison-for-woocommerce') . '</th></tr>';
 
         foreach ( $compare_products as $product_id ) {
             $product = wc_get_product( $product_id );
